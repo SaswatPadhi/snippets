@@ -1,11 +1,19 @@
+/**************************************************************
+ *  Atkin' Sieve for Prime Generation
+ *
+ *  The time complexity is O(N / log log N) and space complexity
+ *  is O(N), where N is the upper limit on value of the primes.
+ **************************************************************/
+
 #include <math.h>
 
 unsigned prime[PSIZE];
 char sieve[SIZE] = {0};
 
 unsigned atkin_sieve() {
-    register unsigned i, j, n, SQSIZE = sqrt(SIZE);
-    register unsigned* p = prime;
+    register unsigned i, j;
+    register unsigned *p = prime;
+    unsigned n, SQSIZE = sqrt(SIZE);
 
     *p = 2;
     *(++p) = 3;

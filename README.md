@@ -11,3 +11,8 @@ Useful snippets of code: Implementation of important algorithms, data structures
     + Sundaram
     + Eratosthenes
     + Fast Eratosthenes (my tweaks for ~50% speed-up!)
+
+- Numeric Algorithms
+    + Modular Exponentiation
+
+- Disjoint Sets (Union-Find Algorithm)
